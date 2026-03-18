@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.*
+*.key
+*.secret
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data & Logs
+logs/
+results/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+venv/
+env/
+
+# Debug
+available_models.txt

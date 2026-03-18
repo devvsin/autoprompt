@@ -1,0 +1,122 @@
+[
+  {
+    "review_id": "1",
+    "product": "Pixel 9",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "2",
+    "product": "budget laptop",
+    "sentiment": "negative",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "3",
+    "product": "wireless earbuds",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "4",
+    "product": "Kindle Paperwhite",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "5",
+    "product": "smart air fryer",
+    "sentiment": "negative",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "6",
+    "product": "Sony WH-1000XM6",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "7",
+    "product": "mechanical keyboard",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "8",
+    "product": "cheap action camera",
+    "sentiment": "negative",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "9",
+    "product": "Logitech MX Master mouse",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "10",
+    "product": "fitness band",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "11",
+    "product": "Bluetooth speaker",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "12",
+    "product": "gaming monitor",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "13",
+    "product": "budget noise-cancelling earbuds",
+    "sentiment": "negative",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "14",
+    "product": "Instant Pot clone",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "15",
+    "product": "ring light",
+    "sentiment": "neutral",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "16",
+    "product": "smartwatch",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "17",
+    "product": "productivity app subscription",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  },
+  {
+    "review_id": "18",
+    "product": "cordless vacuum",
+    "sentiment": "positive",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "19",
+    "product": "budget tablet",
+    "sentiment": "neutral",
+    "is_edge_case": false
+  },
+  {
+    "review_id": "20",
+    "product": "Atomic Habits (hardcover)",
+    "sentiment": "mixed",
+    "is_edge_case": true
+  }
+]

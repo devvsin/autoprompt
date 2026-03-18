@@ -1,0 +1,21 @@
+# Prompt template structure
+template: "{instruction} the {target_info} from this review: '{text}'"
+
+# Candidate pools for placeholders
+candidates:
+  instruction:
+    - "Extract"
+    - "Identify"
+    - "List"
+  
+  target_info:
+    - "product name and sentiment"
+    - "product, sentiment (positive/negative), and specific reason"
+    - "what product is being reviewed and how the customer feels about it"
+
+# Optimization settings - REDUCED FOR FREE TIER
+max_prompts_per_item: 2  # Changed from 5 to 2
+scoring_model: "models/gemini-2.5-flash"  # Fast and efficient for free tier
+generator_model: "models/gemini-2.5-flash"  
+temperature: 0.1
+use_llm_scoring: false  # Disable LLM scoring to save API calls
