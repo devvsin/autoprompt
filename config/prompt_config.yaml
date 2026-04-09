@@ -1,21 +1,13 @@
-# Prompt template structure
-template: "{instruction} the {target_info} from this review: '{text}'"
+# AutoPrompt v2.0 Enterprise
 
-# Candidate pools for placeholders
-candidates:
-  instruction:
-    - "Extract"
-    - "Identify"
-    - "List"
-  
-  target_info:
-    - "product name and sentiment"
-    - "product, sentiment (positive/negative), and specific reason"
-    - "what product is being reviewed and how the customer feels about it"
-
-# Optimization settings - REDUCED FOR FREE TIER
-max_prompts_per_item: 2  # Changed from 5 to 2
-scoring_model: "models/gemini-2.5-flash"  # Fast and efficient for free tier
-generator_model: "models/gemini-2.5-flash"  
+# Models 
+scoring_model: "llama-3.1-8b-instant"  
+generator_model: "llama-3.1-8b-instant"
 temperature: 0.1
-use_llm_scoring: false  # Disable LLM scoring to save API calls
+
+# Sleep limits are deprecated since we use asyncio.gather concurrent scheduling 
+# and Groq has massively high native rate limits. If we hit limits, Tenacity handles exponentially.
+rate_limiting:
+  baseline_sleep_seconds: 0
+  pipeline_reset_sleep_seconds: 0
+  autoprompt_sleep_seconds: 0

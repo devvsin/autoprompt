@@ -1,0 +1,212 @@
+[
+  {
+    "review_id": "R0012",
+    "product": "noise-cancelling headphones",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "bait_and_switch"
+  },
+  {
+    "review_id": "R0045",
+    "product": "knife set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "sarcasm"
+  },
+  {
+    "review_id": "R0089",
+    "product": "office chair",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0187",
+    "product": "yoga mat",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_mask_negative"
+  },
+  {
+    "review_id": "R0206",
+    "product": "skincare set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0246",
+    "product": "gaming mouse",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_bait_sarcasm"
+  },
+  {
+    "review_id": "R0121",
+    "product": "pressure cooker",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0124",
+    "product": "espresso machine",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0126",
+    "product": "wireless earbuds",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0128",
+    "product": "stand mixer",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0130",
+    "product": "perfume",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0132",
+    "product": "robot vacuum",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0136",
+    "product": "face wash",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0138",
+    "product": "stand mixer",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0140",
+    "product": "rain jacket",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0143",
+    "product": "protein powder",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0147",
+    "product": "smart speaker",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0150",
+    "product": "knife set",
+    "sentiment": "mixed",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0156",
+    "product": "moisturizer",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0160",
+    "product": "kettle",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0164",
+    "product": "mechanical keyboard",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0168",
+    "product": "fitness tracker",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0172",
+    "product": "blender",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0175",
+    "product": "baby carrier",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0212",
+    "product": "skincare set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0221",
+    "product": "food processor",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0233",
+    "product": "knife set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0252",
+    "product": "standing desk",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_bait_sarcasm"
+  },
+  {
+    "review_id": "R0264",
+    "product": "running shoes",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_bait_sarcasm"
+  },
+  {
+    "review_id": "R0275",
+    "product": "dash cam",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_genz_sarcasm"
+  }
+]

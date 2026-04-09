@@ -15,10 +15,15 @@ class ExtractedData(BaseModel):
     confidence: float = 0.0
     prompt_used: str = ""
 
-def load_reviews(csv_path: str) -> pd.DataFrame:
-    """Load reviews from CSV and force review_id to string"""
-    # ✅ FIXED: Specify dtype to prevent integer conversion
-    return pd.read_csv(csv_path, dtype={'review_id': str})
+def load_reviews(file_path: str) -> pd.DataFrame:
+    """Load reviews from CSV or JSON and force review_id to string"""
+    if file_path.endswith('.json'):
+        df = pd.read_json(file_path, orient="records")
+        if 'review_id' in df.columns:
+            df['review_id'] = df['review_id'].astype(str)
+        return df
+    
+    return pd.read_csv(file_path, dtype={'review_id': str})
 
 def save_results(results: list, output_path: str):
     """Save results to JSON"""

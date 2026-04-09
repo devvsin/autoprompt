@@ -38,9 +38,11 @@ class Evaluator:
         # Failure rate (malformed outputs)
         failure_rate = (merged['product_pred'].isin(['error', 'unknown'])).mean() * 100
         
-        # Edge case performance (reviews 4, 6, 10 in our data)
-        edge_case_ids = ["4", "6", "10"]
-        edge_performance = merged[merged['review_id'].isin(edge_case_ids)]
+        # Edge case performance (dynamic based on ground_truth matching)
+        if 'is_edge_case' in merged.columns:
+            edge_performance = merged[merged['is_edge_case'] == True]
+        else:
+            edge_performance = pd.DataFrame()
         
         if len(edge_performance) > 0:
             edge_accuracy = (
@@ -63,7 +65,7 @@ class Evaluator:
                        autoprompt_results: List[ExtractedData]) -> dict:
         """Generate comparison report"""
         print("\n" + "="*60)
-        print("🎯 AUTOPROMPT EVALUATION REPORT")
+        print("[*] AUTOPROMPT EVALUATION REPORT")
         print("="*60)
         
         baseline_metrics = self.calculate_metrics(baseline_results)
@@ -91,10 +93,10 @@ class Evaluator:
         
         # Summary
         print("\n" + "="*60)
-        print("📊 KEY FINDINGS")
+        print("[*] KEY FINDINGS")
         print("="*60)
-        print(f"✓ Accuracy Improvement: {report['improvement']['overall_accuracy']:+.1f}%")
-        print(f"✓ Failure Rate Change: {report['improvement']['failure_rate']:+.1f}%")
-        print(f"✓ Edge Case Boost: {report['improvement']['edge_case_accuracy']:+.1f}%")
+        print(f"  Accuracy Improvement: {report['improvement']['overall_accuracy']:+.1f}%")
+        print(f"  Failure Rate Change: {report['improvement']['failure_rate']:+.1f}%")
+        print(f"  Edge Case Boost: {report['improvement']['edge_case_accuracy']:+.1f}%")
         
         return report
