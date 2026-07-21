@@ -1,162 +1,212 @@
 [
   {
-    "review_id": "R001",
-    "product": "blender",
+    "review_id": "R0012",
+    "product": "noise-cancelling headphones",
     "sentiment": "negative",
     "is_edge_case": true,
-    "edge_case_type": "bait_and_switch",
-    "trap": "Effusive praise for packaging/delivery may cause a model to predict 'positive'; true sentiment toward the actual product is sharply negative."
+    "edge_case_type": "bait_and_switch"
   },
   {
-    "review_id": "R002",
-    "product": "wireless earbuds",
+    "review_id": "R0045",
+    "product": "knife set",
     "sentiment": "negative",
     "is_edge_case": true,
-    "edge_case_type": "sarcasm",
-    "trap": "Superlative praise phrases ('SO impressed', 'Best $89', 'Chef's kiss') are all sarcastic. A literal-meaning model may predict 'positive'."
+    "edge_case_type": "sarcasm"
   },
   {
-    "review_id": "R003",
+    "review_id": "R0089",
+    "product": "office chair",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0187",
     "product": "yoga mat",
     "sentiment": "negative",
     "is_edge_case": true,
-    "edge_case_type": "multi_product_confusion",
-    "trap": "Overwhelmingly positive language describes the FitCore Pro (a comparison product, not the review target). The actual reviewed item (this yoga mat) is negative. Model may attribute positive sentiment to the wrong product."
+    "edge_case_type": "neutral_mask_negative"
   },
   {
-    "review_id": "R004",
-    "product": "standing desk",
-    "sentiment": "negative",
-    "is_edge_case": true,
-    "edge_case_type": "gen_z_slang",
-    "trap": "'Lowkey mid', 'sussy', 'bricked', 'no cap', 'main character behavior' are slang signals for poor performance. A model unfamiliar with Gen-Z terminology may misclassify or fail to extract meaningful sentiment."
-  },
-  {
-    "review_id": "R005",
-    "product": "kettle",
-    "sentiment": "neutral",
-    "is_edge_case": true,
-    "edge_case_type": "neutral_observation",
-    "trap": "Entirely factual/descriptive text with zero emotional language. Models biased toward polarity detection may incorrectly infer positive (product described thoroughly) or hallucinate sentiment."
-  },
-  {
-    "review_id": "R006",
-    "product": "running shoes",
-    "sentiment": "negative",
-    "is_edge_case": true,
-    "edge_case_type": "bait_and_switch",
-    "trap": "Strong positive sentiment about shipping and delivery precedes deeply negative product feedback. Model may average or anchor on the positive opening."
-  },
-  {
-    "review_id": "R007",
-    "product": "air purifier",
-    "sentiment": "negative",
-    "is_edge_case": true,
-    "edge_case_type": "sarcasm",
-    "trap": "'Stellar product design', 'Nothing says clean air like' are sarcastic affirmations. Positive-sentiment surface phrases mask a wholly negative review."
-  },
-  {
-    "review_id": "R008",
-    "product": "mascara",
-    "sentiment": "negative",
-    "is_edge_case": true,
-    "edge_case_type": "gen_z_slang",
-    "trap": "'Slay', 'bussin', 'giving', 'flop era', 'not it', 'sus' require Gen-Z semantic understanding. The partial positive ('wand is bussin for volume') makes this a nuanced negative, not mixed — the core function (lasting wear, formula) fails."
-  },
-  {
-    "review_id": "R009",
-    "product": "SoundBar Lite",
-    "sentiment": "negative",
-    "is_edge_case": true,
-    "edge_case_type": "multi_product_confusion",
-    "trap": "The detailed praise ('immaculate', 'crystal audio', 'incredible') applies to the SoundBar Pro 9, not the reviewed product. Product extraction must correctly isolate 'SoundBar Lite' as the target."
-  },
-  {
-    "review_id": "R010",
-    "product": "mechanical keyboard",
-    "sentiment": "neutral",
-    "is_edge_case": true,
-    "edge_case_type": "neutral_observation",
-    "trap": "Spec-sheet style description with no evaluative language. No adjectives of quality are used. Model may interpret a complete feature list as implicitly positive."
-  },
-  {
-    "review_id": "R011",
+    "review_id": "R0206",
     "product": "skincare set",
     "sentiment": "negative",
     "is_edge_case": true,
-    "edge_case_type": "bait_and_switch",
-    "trap": "Emotional, superlative praise ('museum-worthy', 'perfect', 'dream') describes packaging/gifting only. All three product components (moisturizer, serum, eye cream) are severely negative. The phrase 'Beautiful trash' is a pivot cue a model may miss."
+    "edge_case_type": "multi_product_confusion"
   },
   {
-    "review_id": "R012",
-    "product": "coffee grinder",
-    "sentiment": "neutral",
+    "review_id": "R0246",
+    "product": "gaming mouse",
+    "sentiment": "negative",
     "is_edge_case": true,
-    "edge_case_type": "neutral_observation",
-    "trap": "Reviewer uses first-person ownership language ('I use', 'I set', 'I currently own') which may imply familiarity/satisfaction. There is no positive or negative evaluation — purely observational."
+    "edge_case_type": "compound_bait_sarcasm"
   },
   {
-    "review_id": "R013",
-    "product": "smart watch",
+    "review_id": "R0121",
+    "product": "pressure cooker",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0124",
+    "product": "espresso machine",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0126",
+    "product": "wireless earbuds",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0128",
+    "product": "stand mixer",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0130",
+    "product": "perfume",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0132",
+    "product": "robot vacuum",
+    "sentiment": "positive",
+    "is_edge_case": true,
+    "edge_case_type": "gen_z_slang"
+  },
+  {
+    "review_id": "R0136",
+    "product": "face wash",
     "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "gen_z_slang",
-    "trap": "'Big slay', 'ate and left no crumbs' (genuinely positive) vs 'mid', 'giving delulu numbers', 'lowkey unhinged' (genuinely negative). This is a true mixed sentiment — neither collapse to positive nor negative. Slang decoding required for both polarities."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R014",
-    "product": "Levoit 300S humidifier",
-    "sentiment": "negative",
+    "review_id": "R0138",
+    "product": "stand mixer",
+    "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "multi_product_confusion",
-    "trap": "Glowing praise (silent, reliable, perfect humidity) belongs to the Crane Drop, a comparison anchor. The Levoit 300S — the actual reviewed product — receives entirely negative feedback. Product name must be correctly extracted as 'Levoit 300S'."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R015",
-    "product": "laptop",
-    "sentiment": "negative",
+    "review_id": "R0140",
+    "product": "rain jacket",
+    "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "sarcasm",
-    "trap": "'I absolutely adore', 'Absolutely inspired product design', 'a feature I didn't know I needed', 'Cannot recommend this enough', 'Groundbreaking failure' — dense sarcasm throughout. The final phrase 'Groundbreaking failure' is a sarcasm-breaking tell that a model may not contextualize correctly."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R016",
-    "product": "resistance bands",
-    "sentiment": "neutral",
-    "is_edge_case": true,
-    "edge_case_type": "neutral_observation",
-    "trap": "Clinical product description including measurements, materials, and contents. Mentioning 'suggested exercises card' may be misread as positive endorsement. No evaluative stance is present."
-  },
-  {
-    "review_id": "R017",
+    "review_id": "R0143",
     "product": "protein powder",
     "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "gen_z_slang",
-    "trap": "'Based', 'goes crazy', 'fw it heavy' are genuine positives for taste. 'Lowkey trying to kill me' refers to an undisclosed allergen — a genuine safety-level negative. This is true mixed sentiment with life-safety stakes. 'Complicated feelings' is the reviewer's own summary."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R018",
-    "product": "Croft & Co cast iron skillet",
-    "sentiment": "negative",
+    "review_id": "R0147",
+    "product": "smart speaker",
+    "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "multi_product_confusion",
-    "trap": "Lodge skillet receives all positive descriptors ('beautifully', 'even heat', 'workhorse'). The Croft & Co skillet — the actual target — is negative. Product must be extracted as the specific brand 'Croft & Co cast iron skillet', not 'Lodge'."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R019",
-    "product": "robot vacuum",
-    "sentiment": "negative",
+    "review_id": "R0150",
+    "product": "knife set",
+    "sentiment": "mixed",
     "is_edge_case": true,
-    "edge_case_type": "sarcasm",
-    "trap": "'How delightful', 'lovely decorative feature', 'So thrilled', 'Truly a marvel' are layered sarcastic compliments masking a catastrophic product failure (property damage event). Emotional escalation pattern may confuse a model into 'positive'."
+    "edge_case_type": "gen_z_slang"
   },
   {
-    "review_id": "R020",
-    "product": "office chair",
+    "review_id": "R0156",
+    "product": "moisturizer",
     "sentiment": "neutral",
     "is_edge_case": true,
-    "edge_case_type": "neutral_observation",
-    "trap": "Entirely assembly/feature documentation language. Noting the chair 'comes partially assembled' and 'attaches in two steps' may be incorrectly coded as positive (ease of assembly) — but no evaluative judgment is made."
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0160",
+    "product": "kettle",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0164",
+    "product": "mechanical keyboard",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0168",
+    "product": "fitness tracker",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0172",
+    "product": "blender",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0175",
+    "product": "baby carrier",
+    "sentiment": "neutral",
+    "is_edge_case": true,
+    "edge_case_type": "neutral_observation"
+  },
+  {
+    "review_id": "R0212",
+    "product": "skincare set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0221",
+    "product": "food processor",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0233",
+    "product": "knife set",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "multi_product_confusion"
+  },
+  {
+    "review_id": "R0252",
+    "product": "standing desk",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_bait_sarcasm"
+  },
+  {
+    "review_id": "R0264",
+    "product": "running shoes",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_bait_sarcasm"
+  },
+  {
+    "review_id": "R0275",
+    "product": "dash cam",
+    "sentiment": "negative",
+    "is_edge_case": true,
+    "edge_case_type": "compound_genz_sarcasm"
   }
 ]
